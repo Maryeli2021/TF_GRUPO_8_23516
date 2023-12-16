@@ -1,0 +1,53 @@
+<!--navbar-->
+{% extends "core/base.html" %}
+{% block title %} noroeste {% endblock %}
+
+{% block background %} {% endblock %}
+
+<!--contenido-->
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'core/css/BsAsDestino.css' %}" type="text/css">
+<div class="bellow_contenedor">
+            <img src="{% static 'core/img/img_destinos/NOROESTE.jpg' %}" alt="imagen de la región noroeste"/>
+        <div class="destino_X">NOROESTE</div>
+        </div>
+
+    <div class="main_container">
+    <div>
+        <img class="image" src="{% static 'core/img/img_destinos/noroeste/Tren_a_las_nubes.jpg' %}" alt="imagen del tren a las nubes"></a>
+    </div>
+    <div class="descripcion">
+        <h2 class="titulo_destino">TREN A LAS NUBES</h2>
+         <p class="texto_destino">Es uno de los trenes más altos del mundo y es uno de los paseos más buscados en el Noroeste. 
+                El tren inicia su recorrido desde San Antonio de los Cobres, pueblo donde opera un mercado artesanal, y donde se puede conocer la iglesia San Antonio de Padua y el Museo Regional Andino.
+                Y continúa por el Viaducto La Polvorilla, el cual se encuentra a 4220 metros sobre el nivel del mar y cruza un profundo cañadón; para posteriormente regresar a la estación en San Antonio de los Cobres. <br>                
+                <a href="https://trenalasnubes.com.ar/inicio-es/">Sitio oficial del tren a las nubes</a>
+        </p>
+    </div>
+        
+    <div class="descripcion">
+        <h2 class="titulo_destino">TAFI DEL VALLE</h2>
+        <p class="texto_destino">A Tafí del valle se llega ascendiendo por la ruta provincial 307 hacia el noroeste y tras pasar las sierras centrales de la provincia de Tucumán. Uno de los principales atractivos del lugar es su entorno natural, con montañas, ríos y lagunas. 
+                Aquí se pueden visitar sitios turísticos como la Laguna del Tesoro, la Reserva Natural de La Angostura y la Quebrada de Los Sosa.
+                Además, Tafí del Valle cuenta con una rica cultura e historia, con lugares de interés como la Iglesia de La Banda, el Museo Jesuítico La Banda y la Casa de la Cultura. <br>                                
+                <a href="https://www.tucumanturismo.gob.ar/">Página de turismo de Tucumán</a>
+         </p>
+    </div>
+    <div>
+        <img class="image" src="{% static 'core/img/img_destinos/noroeste/Tafi_del_valle.jpg' %}" alt="imagen de Tafi del valle"></a>
+    </div>
+
+    <div>
+        <img class="image" src="{% static 'core/img/img_destinos/noroeste/Salinas-Grandes.jpg' %}" alt="imagen de las salinas"></a>
+    </div>
+    <div class="descripcion">
+        <h2 class="titulo_destino" >SALINAS GRANDES Y PURMAMARCA</h2>
+        <p class="texto_destino">Purmamarca es un pueblo de la provincia de Jujuy que se encuentra  ubicado en la Quebrada de Humahuaca, 
+                sobre la ruta 52, al pie del Cerro de los siete colores. La aldea tiene una feria en su plaza donde se pueden adquirir las artesanías locales.
+                Continuando por la ruta 52, también se accede a las Salinas Grandes, un desierto de sal ubicado en la Puna, de 200 km y que divide en aquella región 
+                a la provicias de Salta y de Jujuy. Las salinas es un lugar ideal para sacar fotos únicas y divertidas. <br>
+                <a href="http://www.turismo.jujuy.gob.ar/">Página de turismo de Jujuy</a>
+        </p>
+</div>
+{% endblock %}

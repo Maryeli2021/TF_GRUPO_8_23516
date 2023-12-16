@@ -1,0 +1,56 @@
+<!--navbar-->
+{% extends "core/base.html" %}
+{% block title %} patagonia {% endblock %}
+
+{% block background %} {% endblock %}
+
+<!--contenido-->
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'core/css/BsAsDestino.css' %}" type="text/css">
+ <div class="bellow_contenedor">
+            <img src="{% static 'core/img/img_destinos/PATAGONIA.jpg' %}" alt="imagen de un lago entre montañas  en la region de patagonia"/>
+        <div class="destino_X">PATAGONIA</div>
+        </div>
+
+        <div class="main_container">
+        <div>
+            <img class="image" src="{% static 'core/img/img_destinos/patagonia/glaciar.webp' %}" alt="imagen del glaciar perito moreno"></a>
+        </div>
+        <div class="descripcion">
+            <h2 class="titulo_destino">GLACIAR PERITO MORENO</h2>
+            <p class="texto_destino">Por lo espectacular de la vista que ofrece, el glaciar Perito Moreno es considerado la octava maravilla del mundo.
+                La imponente masa de hielo interminable rodeada de bosques y montañas es un espectáculo que pocos se quieren perder.
+                Se puede llegar hasta el Glaciar en paseos por tierra o alternando etapas de navegación en el recorrido. Una vez en el Glaciar, se puede apreciar la majestuosidad que impacta a los ojos del viajante, desde diferentes balcones, existiendo también un área de accesibilidad. 
+                El lugar ofrece diferentes servicios: restaurant, snackbar, sanitarios, estacionamiento, atención primaria de la salud, y servicios de fotografía.<br>
+                <a href="https://www.elcalafate.tur.ar/">PAGINA OFICIAL EL CALAFATE</a>
+            </p>
+        </div>
+        
+        <div class="descripcion">
+            <h2 class="titulo_destino">TREN DEL FIN DEL MUNDO</h2>
+            <p class="texto_destino">La Estación Principal del tren se encuentra a tan solo 7 km de la ciudad de Ushuaia, y es donde los guías lo invitarán a revivir los últimos 7 km del recorrido. 
+                A bordo del tren se podrá escuchar la historia de los presos que a diario iban a cortar madera a esa zona, y deleitarse con magníficos paisajes, compuestos por el zigzagueante río Pipo, la cascada La Macarena y el majestuoso bosque de lengas. 
+                De esta manera visitará una parte inaccesible del Parque Nacional Tierra del Fuego, donde se podrá disfrutar de esta experiencia a bordo de un ferrocarril de época, con sus locomotoras a vapor y elegantes coches que cuentan con amplios ventanales y un sistema de audio individual a fin de poder no solo apreciar la naturaleza que lo rodea, sino también conocer una parte muy importante de la historia de Ushuaia.
+                <a href="https://www.trendelfindelmundo.com.ar/">VER HORARIOS DEL TREN</a>
+            </p>
+        </div>
+        <div>
+            <img class="image" src="{% static 'core/img/img_destinos/patagonia/tren-ushuaia.jpeg' %}" alt="imagen de tren recorriendo paisaje patagonico"></a>
+        </div>
+
+        <div>
+            <img class="image" src="{% static 'core/img/img_destinos/patagonia/punta-tombo.jpg' %}" alt="imagen de familia fotografiando un pingúino"></a>
+        </div>
+        <div class="descripcion">
+            <h2 class="titulo_destino" >RESERVA NATURAL PUNTA TOMBO</h2>
+            <p class="texto_destino">La Reserva Natural de Punta Tombo alberga a la mayor colonia de pingüinos de Magallanes que existe en el mundo. 
+                El Centro de Interpretación de Pingüinos de Magallanes es un gran emprendimiento de alcance turístico y científico.
+                La visita a la pingüinera debe realizarse priorizando el respeto por el habitat y la especie, siguiendo las indicaciones de gaurdafaunas y señalización. 
+                La optimización de la ruta de acceso a la reserva y la puesta en marcha del Centro de Interpretación posibilitará que los turistas puedan disfrutar de las instalaciones y servicios de la reserva aún fuera de la temporada de pingüinos. 
+                A su vez, a nivel científico, su principal objetivo es el de proteger el Ecosistema Punta Tombo y generar un espacio idóneo para la investigación de la especie y su interacción con el entorno natural.
+                <a href="https://www.puntatombo.com/">PAGINA OFICIAL PUNTA TOMBO</a>
+            </p>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,69 @@
+<!--navbar-->
+{% extends "core/base.html" %}
+{% block title %} buenos_aires {% endblock %}
+
+{% block background %} {% endblock %}
+
+<!--contenido-->
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'core/css/BsAsDestino.css' %}" type="text/css">
+<div class="bellow_contenedor">
+        <figure>
+       <img src="{% static 'core/img/img_destinos/destinos_bsAs_1/bsAs_p_encabezado.jpg' %}" alt="imagen de la ciudad BsAs"/>
+        <div class="destino_X">BUENOS AIRES</div>
+        <figcaption><p><a href="../consulta_clima.html">Consulta el clima aquí</a></p></figcaption>
+        </figure>
+    </div>
+
+    <div class="main_container">
+        <div>
+            <img class="image" src="{% static 'core/img/img_destinos/destinos_bsAs_1/1_01_buenos_aires.jpg' %}" alt="imagen de Buenos Aires"></a>
+        </div>
+        <div class="descripcion">
+            <h2 class="titulo_destino">MUSEO DEL JUGUETE</h2>
+            <p class="texto_destino">Ubicado en una casa antigua de Boulogne, partido de San Isidro, el museo del juguete es un lugar fascinante 
+            para visitar en familia. Allí se puede disfrutar de una exposición permanente de juguetes de diferentes épocas, 
+            exhibidos por temáticas en cuatro salas, actividades al aire libre y talleres para toda la familia. <br>
+            <iframe src="https://www.museodeljuguetesi.gob.ar/"  allowfullscreen=""
+            allow="encrypted-media"
+            width="220" height="65"></iframe>
+            </p>
+        </div>
+        
+        <div class="descripcion">
+            <h2 class="titulo_destino">MAR DEL PLATA</h2>
+            <p class="texto_destino">Principal centro turístico y balneario de la costa atlántica argentina, a sólo 404 km de la Ciudad Autonoma
+                de Buenos Aires.
+                Magníficas playas, amplias bahías, acantilados imponentes y bosques se alternan a lo largo de 47 km de costa.
+                Sierras, campos ondulados, arboledas, lagunas, arroyos, quintas y canteras conforman paisajes rurales de gran 
+                belleza.
+                Además de disfrutar de las hermosas playas, las actividades recreativas son muchas: teatros, paseos de compras,
+                alquilar bicicletas para recorrer la ciudad, aprender a surfear,subirse a una embarcación para disfrutar de una 
+                excursión marítima, realizar un paseo aéreo,  trekking o parapente o cabalgar en la laguna, son solamente algunas 
+                de ellas. <br>
+                <a href="https://www.turismomardelplata.gob.ar/">Página de turismo Mar del Plata</a>
+            </p>
+        </div>
+        <div>
+            <img class="image" src="{% static 'core//img/img_destinos/destinos_bsAs_1/1_02_MarDelPlataBsAs.jpg' %}" alt="imagen de Buenos Aires"></a>
+        </div>
+
+        <div>
+            <img class="image" src="{% static 'core/img/img_destinos/destinos_bsAs_1/1_03_MundoMarinoBsAs.jpg' %}" alt="imagen de Buenos Aires"></a>
+        </div>
+        <div class="descripcion">
+            <h2 class="titulo_destino" >MUNDO MARINO</h2>
+            <p class="texto_destino">Ubicado en San Clemente del Tuyú, Provincia de Buenos Aires. A a 320 km. de distancia de la Ciudad de Buenos Aires 
+                y a 220 km. desde Mar del Plata.
+                Es el mayor oceanario de América del Sur. Cuenta con 20 piletas adecuadamente distribuidas, que albergan más de 
+                50 mamíferos marinos, más de 80 aves y un número variable de peces y animales típicos de la fauna costera.
+                Entre las atracciones principales se recomiendan las exhibiciones con delfines, orcas, lobos marinos,etc.
+                El Safari Terrestre consiste en una expedición guíada en vehículos especiales para  descubrir y maravillarse con 
+                especies tales como Búfalos, Carpinchos, Antílopes Eland, Monos Capuchinos, Flamencos, Ñandúes, Cisnes, Ciervos, 
+                Alpacas, Cebra y variadas aves de la zona y migratorias. <br>
+                <a href="https://www.mundomarino.com.ar/">Página de Mundo Marino</a>
+            </p>
+        </div>
+    </div>
+    {% endblock %}

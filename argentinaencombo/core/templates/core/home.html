@@ -1,0 +1,55 @@
+<!--navbar-->
+{% extends "core/base.html" %}
+{% block title %} inicio {% endblock %}
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'core/css/style.css' %}" type="text/css">
+{% block background %}{% endblock %}
+
+
+<!--contenido-->
+{% block content %}
+    <section  class="contenedor1">
+        <div class="slider2">
+            <ul>
+              <li>
+                <img src="{% static 'core/img/img_inicio/familiaauto.jpg' %}" alt="Aca hay una imagen de una familia en vacaciones viajando en un auto">
+              </li>
+              <li>
+                <img src="{% static 'core/img/img_inicio/Family-Hike.jpg' %}" alt="">
+              </li>
+              <li>
+                <img src="{% static 'core/img/img_inicio/Vacaciones-en-familia.jpg' %}" alt="">
+              </li>
+            </ul>
+          </div>
+        <h2 class="slogan">... LA  AVENTURA  ESTA  POR  COMENZAR</h2>
+    </section>
+   <p class ="texto1" >Si tenés hijos seguramente estas constantemente planeando alguna actividad para mantenerlos divertidos y activos, puede ser con amigos o en familia, y probablemente ya te has dado cuenta que no es una tarea fácil encontrar lugares que brinden diversión para todos. 
+    En <b>ARGENTINA EN COMBO</b> te ayudamos a encontrar esos lugares donde desde el mas pequeño hasta el mas grande encontraran una actividad que les divierta</P>
+    
+    <section class="contenedor2">
+        <h3 class="icon_actividades">ACTIVIDADES</h3>   
+        <h3 class="icon_rutas">RUTAS</h3>   
+        <h3 class="icon_parques">PARQUES</h3>   
+        <h3 class="icon_hoteles">HOTELES</h3>
+    </section>
+
+    <section class="contenedor3">
+    <h2 class="titulo_costa"> ¡ LOS LUGARES MAS HERMOSOS <br> PARA VISITAR EN LA COSTA ATLANTICA !</h2>
+    <img src="{% static 'core/img/img_inicio/bigstock-costa-argentina.jpg' %}" alt="Aca hay una imagen de un atardecer en un muelle en la costa argentina ">
+    <a href="{% url 'destinos' %}" class="boton_destinos">DESTINOS</a> 
+    </section>
+
+    <section class="contenedor4">
+        <h3 class="icon_mapas">MAPAS</h3>   
+        <h3 class="icon_consejos">CONSEJOS</h3>   
+        <h3 class="icon_botiquin">BOTIQUIN</h3>   
+    </section>
+    
+    <section class="contenedor5">
+    <img src="{% static 'core/img/img_inicio/parque-nacional-perito-moreno.webp' %}" alt="Aca hay una imagen del Parque Nacional Perito Moreno">
+    <h2 class="titulo_perito">¡DESCUBRE LOS PARQUES NACIONALES <br> MAS IMPRESIONANTES!</h2>
+    <a href="{% url 'imperdibles' %}" class="boton_imperdibles">IMPERDIBLES</a> 
+    </section>
+{% endblock %}

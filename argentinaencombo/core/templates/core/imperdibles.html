@@ -1,0 +1,53 @@
+<!--navbar-->
+{% extends "core/base.html" %}
+{% block title %} imperdibles {% endblock %}
+
+{% block background %} {% endblock %}
+
+<!--contenido-->
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'core/css/imperdibles.css' %}" type="text/css">
+<section class="below">
+        <div class="below__content container">
+            <h2 class="below__title">IMPERDIBLES</h2>
+        </div>
+    </section>
+    <div class="under_below">
+        <P class="under_below__text">Podio de los destinos más elegidos en</P>
+        <h3 class="under_below__month" id="currentMonth"></h3>
+    </div>
+    <main class="main_container">
+        <section class="destino">
+            <article class="destino__content">
+                <h3 class="destino__title">Cataratas del Iguazú</h3>
+                <p class="destino_text">Las Cataratas del Iguazú son una de las maravillas naturales del mundo y un destino ideal para visitar con niños. Los más pequeños podrán disfrutar de la belleza de las cataratas desde diferentes miradores, así como de actividades como paseos en barco, senderismo y avistamiento de aves.</p>
+                <a class="destino__link" href="{% url 'noreste' %}">QUIERO IR</a>
+            </article>
+            <picture class="destino__cover">
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/b83lxWz_se4?si=NYtH_j60JP83r7-a&amp;start=16" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <!-- <img src="../img/img_imperdibles/Cataratas_del_Iguazú_en_Argentina.jpg" alt="imágen de las imponentes Cataratas del Iguazú"> -->
+            </picture>
+        </section>
+        <section class="destino container">
+            <article class="destino__content">
+                <h3 class="destino__title">Glaciar Perito Moreno</h3>
+                <p class="destino_text"> El Glaciar Perito Moreno es otro espectáculo natural impresionante que no dejará indiferente a los niños. Los más aventureros podrán acercarse al glaciar en barco o en kayak, mientras que los más tranquilos podrán disfrutar de las visitas desde la pasarela.</p>
+                <a class="destino__link" href="{% url 'patagonia' %}">QUIERO IR</a>
+            </article>
+            <picture class="destino__cover">
+                <img src="{% static 'core/img/img_imperdibles/Glaciar_Perito_Moreno.jpg' %}" alt="imágen del imponente Glaciar Perito Moreno">
+            </picture>
+        </section>
+        <section class="destino container">
+            <article class="destino__content">
+                <h3 class="destino__title">Peninsula Valdes</h3>
+                <p class="destino_text">La Península Valdés es un santuario de de fauna marina donde se pueden ver ballenas, elefantes marinos, pingüinos y lobos marinos. Los niños podrán disfrutar de excursiones en barco para ver a estos animales en su hábitat natural.</p>
+                <a class="destino__link" href="{% url 'patagonia' %}">QUIERO IR</a>
+            </article>
+            <picture class="destino__cover">
+                <img src="{% static 'core/img/img_imperdibles/Peninsula_Valdes.jpg' %}" alt="imágen de una ballena en Península de Valdes">
+            </picture>
+        </section>
+
+{% endblock %}

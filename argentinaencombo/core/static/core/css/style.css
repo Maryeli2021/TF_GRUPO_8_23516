@@ -1,0 +1,608 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family:'Roboto', Courier, monospace;
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Roboto', Courier, monospace;
+    color: rgb(250, 250, 250);
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+
+/* HEADER*/
+
+header {
+    background-color:rgb(52, 96, 240);
+    padding: 0.6rem;
+}
+
+
+.navbar {
+    /*max-width: 1200px;*/
+    display:flex;
+    justify-content: space-between;
+    align-items:baseline;
+}
+
+.navbar__logo {
+    max-width: 300px;
+    /*margin-left: 5px;*/
+}
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navbar__link {
+    font-size: 1.8rem;
+    padding:  0.8rem 1.6rem;
+    display: inline-block;
+    transition: background .3s ease-in-out;
+    position:relative;
+    border-radius: 20px;
+}
+
+.navbar__link:hover {
+    background-color: rgba(150, 255, 51, 0.9);
+    color: rgb(52, 96, 240);
+}
+
+.with-icon {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.with-submenu:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    display: none;
+    width: 300px;
+    position: absolute;
+    background-color: rgb(52, 96, 240);
+    z-index: 3;
+}
+
+.submenu__link {
+    display: block;
+    padding: 0.8rem 1.6rem;
+    font-size: 1.8rem;
+    transition: background .3s ease-in-out;
+}
+
+.submenu__link:hover {
+    background-color: rgba(150, 255, 51, 0.9);
+    color: rgb(52, 96, 240); 
+}
+
+/*Main*/
+
+.contenedor1 {
+    height: 5%;
+    margin-bottom: 5rem;
+}
+.slider2 {
+	width: 100%;
+    height: 20%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.slider2 ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	animation: cambio 20s infinite alternate linear;
+}
+
+.slider2 li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider2 img {
+	width: 100%;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	30% {margin-left: 0;}
+	
+	35% {margin-left: -150%;}
+	70% {margin-left: -150%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+.slogan {
+background-color: rgb(52, 96, 240);
+padding: 30px;
+color:rgb(255, 255, 255);
+font-size: 32px;
+font-weight: bold;
+font-style: italic;
+box-sizing: border-box;
+width: 100%;
+text-align:end;
+margin-top: -10px;
+}
+
+
+.texto1 {
+    color: rgb(52, 96, 240);
+    font-size: 25px;
+    font-style: italic;
+    margin: 5px 10px 5px 10px;
+    padding: 10px;
+    text-align: justify;
+}
+
+.contenedor2{
+    height: 40%;
+    text-align: center;
+}
+
+.icon_actividades{
+    background-image: url(img/img_inicio/montaña.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    font-size: 32px;
+    text-align: center;
+    line-height: 270px;
+    display: inline-block;
+    margin: 5px;
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    border: 1px solid black;
+    text-shadow: 1px 1px 0 white, -1px 1px 0 white, 1px -1px 0 white, -1px -1px 0 white;
+}
+
+.icon_rutas{
+    background-image: url(/img/img_inicio/RUTAS.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    font-size: 32px;
+    text-align: center;
+    line-height: 270px;
+    display: inline-block;
+    margin: 5px;
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    border: 1px solid black;
+    text-shadow: 1px 1px 0 white, -1px 1px 0 white, 1px -1px 0 white, -1px -1px 0 white;
+
+ }
+ .icon_parques{
+    background-image: url(/img/img_inicio/parque\ acuatico.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    font-size: 32px;
+    text-align: center;
+    line-height: 270px;
+    display: inline-block;
+    margin: 5px;
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    border: 1px solid black;
+    text-shadow: 1px 1px 0 white, -1px 1px 0 white, 1px -1px 0 white, -1px -1px 0 white;
+
+ }
+ .icon_hoteles{
+    background-image: url(/img/img_inicio/hotel.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    font-size: 32px;
+    text-align: center;
+    line-height: 270px;
+    display: inline-block;
+    margin: 5px;
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    border: 1px solid black;
+    text-shadow: 1px 1px 0 white, -1px 1px 0 white, 1px -1px 0 white, -1px -1px 0 white;
+ }
+ 
+
+.contenedor3{
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+.titulo_costa{
+        font-family: 'Roboto', Courier, monospace;
+        font-size: 3rem;
+        font-style: italic;
+        color: rgba(255, 255, 255, 0.9);
+        text-shadow: 1px 1px 0 black, -1px 1px 0 black, 1px -1px 0 black, -1px -1px 0 black;
+        transform: translate(-10%, 200%);
+        text-align:right;
+}
+
+.boton_destinos{
+    position: absolute; 
+    top: 40%;
+    left:70%;
+    transform: translate(-20%, 50%);
+    padding: 10px 20px;
+    background-color:rgb(52, 96, 240) ;
+    color: white;
+    text-align: right;
+    text-decoration: none;
+    font-size: 25px;
+    border-radius: 1rem;
+    font-weight: bold;
+}
+
+.boton_destinos:hover{
+background-color: rgba(150, 255, 51, 0.9);
+color: rgb(52, 96, 240);
+}
+
+.contenedor4{
+    height: 40%;
+    text-align: center;
+}
+
+.icon_mapas{
+    background-image: url(/img/img_inicio/MAPA\ RUTA.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    font-size: 32px;
+    text-align: center;
+    line-height: 270px;
+    display:inline-block;
+    padding: 20px;
+    margin: 10px;
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    border: 1px solid black;
+    text-shadow: 1px 1px 0 white, -1px 1px 0 white, 1px -1px 0 white, -1px -1px 0 white;
+}
+.icon_consejos{
+    background-image: url(/img/img_inicio/escuchar.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    font-size: 32px;
+    text-align: center;
+    line-height: 270px;
+    display: inline-block;
+    padding: 20px;
+    margin: 10px;
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    border: 1px solid black;
+    text-shadow: 1px 1px 0 white, -1px 1px 0 white, 1px -1px 0 white, -1px -1px 0 white;
+}
+.icon_botiquin{
+    background-image: url(/img/img_inicio/SALUD.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    font-size: 32px;
+    text-align: center;
+    line-height: 270px;
+    display: inline-block;
+    padding: 20px;
+    margin: 10px;
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    border: 1px solid black;
+    text-shadow: 1px 1px 0 white, -1px 1px 0 white, 1px -1px 0 white, -1px -1px 0 white;
+}
+
+.contenedor5{
+    position: relative;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.titulo_perito{
+        font-family: 'Roboto', Courier, monospace;
+        font-size: 3rem;
+        font-style: italic;
+        color: rgba(255, 255, 255, 0.9);
+        text-shadow: 1px 1px 0 black, -1px 1px 0 black, 1px -1px 0 black, -1px -1px 0 black;
+        text-align: left;
+        transform: translate(10%, -250%);
+}
+.boton_imperdibles{
+    position: absolute;  
+    top: 70%;
+    left:20%;
+    transform: translate(-10%, -200%);
+    padding: 10px 20px;
+    background-color:rgb(52, 96, 240) ;
+    color: white;
+    text-align: left;
+    text-decoration: none;
+    font-size: 25px;
+    border-radius: 1rem;
+    font-weight: bold;
+}
+
+.boton_imperdibles:hover{
+    background-color: rgba(150, 255, 51, 0.9);
+    color: rgb(52, 96, 240);
+    }
+
+/*Footer*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color:white;
+    border-radius: 25px;
+    font-family: 'Roboto', Courier, monospace;
+}
+
+.navbar {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.follow {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.follow__us {
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 2rem;
+}
+
+.follow__social_icons  {
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+.footer__copy {
+    margin-left: 80px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+.fab:hover {
+    transform: scale(1.7);
+}
+
+/*----------Responsive Tablet----------*/
+
+@media screen and (min-width: 640px) and (max-width: 1200px) {
+    
+    .navbar__logo {
+        max-width: 150px;
+    }
+
+    .navbar__link {
+        font-size: 1.5rem;
+        padding: 0.5em; 
+    }
+
+    .submenu__link {
+        font-size: 1.5rem;
+    }
+
+    .slogan {
+        font-size: 20px;
+    }
+
+    .texto1 {
+        font-size: 20px;
+    }
+
+    .icon_actividades{
+        font-size: 18px;
+        line-height: 150px;
+        width: 150px;
+        height: 150px;
+    }
+    
+    .icon_rutas{
+        font-size: 18px;
+        line-height: 150px;
+        width: 150px;
+        height: 150px;
+     }
+
+     .icon_parques{
+        font-size: 18px;
+        line-height: 150px;
+        width: 150px;
+        height: 150px;
+     }
+
+     .icon_hoteles{
+        font-size: 18px;
+        line-height: 150px;
+        width: 150px;
+        height: 150px;
+     }
+     
+    .titulo_costa{
+        font-size: 2rem;
+    }
+
+    .boton_destinos{
+        font-size: 15px;
+    }  
+
+    .icon_mapas{
+        font-size: 18px;
+        line-height: 150px;
+        width: 150px;
+        height: 150px;
+    }
+    .icon_consejos{
+        font-size: 18px;
+        line-height: 150px;
+        width: 150px;
+        height: 150px;
+    }
+    .icon_botiquin{
+        font-size: 18px;
+        line-height: 150px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .titulo_perito{
+        font-size: 2rem;
+    }
+
+    .boton_imperdibles{
+        font-size: 15px;
+    }
+
+    .follow__us {
+        font-size: 1.5rem;
+    }
+    
+    .follow__social_icons {
+        font-size: 15px;
+    }
+    
+    .footer__copy {
+        font-size: 0.5rem;
+    }
+}
+
+/*----------Responsive Mobile----------*/
+
+@media screen and (max-width: 640px) {
+    .navbar__logo {
+        max-width: 100px;
+    }
+
+    .navbar__link {
+        font-size: 1rem;
+        padding: 0.5em; 
+    }
+
+    .submenu__link {
+        font-size: 1rem;
+    }
+
+    .slogan {
+        font-size: 15px;
+    }
+        
+    .texto1 {
+        font-size: 15px;
+    }
+
+    .icon_actividades{
+        font-size: 10px;
+        line-height: 100px;
+        width: 100px;
+        height: 100px;
+    }
+    
+    .icon_rutas{
+        font-size: 10px;
+        line-height: 100px;
+        width: 100px;
+        height: 100px;
+     }
+
+     .icon_parques{
+        font-size: 10px;
+        line-height: 100px;
+        width: 100px;
+        height: 100px;
+     }
+
+     .icon_hoteles{
+        font-size: 10px;
+        line-height: 100px;
+        width: 100px;
+        height: 100px;
+     }
+    
+    .titulo_costa{
+        font-size: 1.2rem;
+    }
+
+    .boton_destinos{
+        font-size: 10px;
+    }  
+
+    .icon_mapas{
+        font-size: 10px;
+        line-height: 100px;
+        width: 100px;
+        height: 100px;
+    }
+    .icon_consejos{
+        font-size: 10px;
+        line-height: 100px;
+        width: 100px;
+        height: 100px;
+    }
+    .icon_botiquin{
+        font-size: 10px;
+        line-height: 100px;
+        width: 100px;
+        height: 100px;
+    } 
+
+    .titulo_perito{
+        font-size: 1.2rem;
+    }
+
+    .boton_imperdibles{
+        font-size: 10px;
+    }
+
+    .follow__us {
+        font-size: 1rem;
+    }
+    
+    .follow__social_icons {
+        font-size: 10px;
+    }
+    
+    .footer__copy {
+        font-size: 0.3rem;
+    }
+}

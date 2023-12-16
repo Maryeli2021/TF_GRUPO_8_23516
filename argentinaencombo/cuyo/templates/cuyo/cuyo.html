@@ -1,0 +1,40 @@
+<!--navbar-->
+{% extends "core/base.html" %}
+{% block title %} cuyo {% endblock %}
+
+{% block background %} {% endblock %}
+
+<!--contenido-->
+{% block content %}
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'core/css/BsAsDestino.css' %}" type="text/css">
+<div class="bellow_contenedor">
+        <img src="{% static 'core/img/img_destinos/CUYO.jpg' %}" alt="imagen de paisaje de montaña en la region de cuyo"/>
+    <div class="destino_X">CUYO</div>
+    </div>
+{%for project in projects %}
+<div class="main_container">
+     <div>
+        <img class="image" src="{{project.image.url}}" alt=""></a>
+    </div>
+    <div class="descripcion">
+        <h2 class="titulo_destino">{{project.title}}</h2>
+        <p class="texto_destino">{{project.description}}</p>
+    </div>
+
+    <div>
+        <img class="image" src="{% static 'core/img/img_destinos/cuyo/laberinto-Borges.jpg' %}" alt="imagen aerea del laberinto de borges en la region de cuyo"></a>
+    </div>
+    <div class="descripcion">
+        <h2 class="titulo_destino" >LABERINTO DE BORGES</h2>
+        <p class="texto_destino">Se encuentra a solo 20 minutos de la ciudad de San Rafael. Es una obra de arte que encierra en sí misma simbología, nos invita a recorrer los extensos senderos y disfrutar su vista desde una altura de 22 metros.
+                El laberinto se enmarca en un parque gigante, rodeado de viñedos, acequias, y un frondoso bosque, iluminado con un sistema de última tecnología para disfrutarlo en las noches de verano y vivir una experiencia única e inolvidable.
+                Posee una zona de juegos infantiles para que los niños puedan disfrutar en un entorno puro y natural. Y para los amantes de la historia, cuenta con un recorrido cálido por el Museo para conocer a los protagonistas. Un servicio libre y gratuito.
+                Cuenta con una Pulpería y un Bistró que permiten disfrutar de una experiencia gastronómica rodeados por el magnífico parque y degustar los más exquisitos platos de la cocina criolla.
+                <a href="https://www.laberintodeborges.com/">Página Laberinto de Borges</a>
+        </p>
+    </div>
+</div>
+{% endfor %}
+{% endblock %}

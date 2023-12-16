@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% block title %} {% endblock %}Argentina en Combo - Guía de viajes</title>
+    
+    {% load static %}
+    <link rel="shortcut icon" href= "{% static 'core/icon/star_icon.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'core/css/style.css' %}" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+
+ <header>
+    <nav>
+        <nav class="navbar container">
+            <picture class="navbar__logo">
+                <a href="{% url 'home' %}">
+                    <img src="{% static 'core/img/logo1.png' %}" alt="Logo Argentina en combo">
+                </a>
+            </picture>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="{% url 'home' %}">INICIO</a>
+                    </li>
+                    <li class="navbar__item with-submenu">
+                        <a class="navbar__link with-icon" href="{% url 'destinos' %}" target="_blank">DESTINOS</a>
+                       <ul class="submenu">
+                            <li class="submenu__item">
+                                <a href="{% url 'buenos_aires' %}" class="submenu__link">BUENOS AIRES</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="{% url 'noroeste' %}" class="submenu__link">NOROESTE</a>
+                            </li>                        
+                            <li class="submenu__item">
+                                <a href="{% url 'centro' %}" class="submenu__link">CENTRO</a>
+                            </li>                        
+                            <li class="submenu__item">
+                                <a href="{% url 'noreste' %}" class="submenu__link">NORESTE</a>
+                            </li>                        
+                            <li class="submenu__item">
+                                <a href="{% url 'cuyo' %}" class="submenu__link">CUYO</a>
+                            </li>                        
+                            <li class="submenu__item">
+                                <a href="{% url 'patagonia' %}" class="submenu__link">PATAGONIA</a>
+                            </li>
+                       </ul>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="{% url 'imperdibles' %}" target="_blank">IMPERDIBLES</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="{% url 'tips' %}" target="_blank">TIPS</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="{% url 'contacto' %}" target="_blank">CONTACTO</a>
+                    </li>
+                </ul>
+        </nav> 
+   </nav>
+</header>
+{% block header %} {% endblock %}
+<!--contenido-->
+{% block content %} {% endblock %}
+   
+<footer>
+    <picture class="navbar__logo">
+        <a href="{% url 'home' %}">
+            <img src="{% static 'core/img/img_inicio/logo4.png' %}" alt="Logo Argentina en combo">
+        </a>
+    </picture>
+    <nav class="navbar">
+        <ul class="navbar__menu">
+            <li class="navbar__item">
+                <a class="navbar__link" href="{% url 'home' %}">INICIO</a>
+            </li>
+            <li class="navbar__item">
+                <a class="navbar__link" href="{% url 'destinos' %}">DESTINOS</a>
+            </li>
+            <li class="navbar__item">
+                <a class="navbar__link" href="{% url 'imperdibles' %}">IMPERDIBLES</a>
+            </li>
+            <li class="navbar__item">
+                <a class="navbar__link" href="{% url 'tips' %}">TIPS</a>
+            </li>
+            <li class="navbar__item">
+                <a class="navbar__link" href="{% url 'contacto' %}">CONTACTO</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="follow">
+        <p class="follow__us">¡SEGUINOS!</p>
+        <div class="follow__social_icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-youtube"></i>
+        </div>
+        <p class="footer__copy">©argentinaencombo. Todos los derechos reservados.<br> Argentina en Combo. Av. Córdoba 1151 - C.A.B.A. CP (1429) - Argentina.<br> Tel/Fax: 54-11-5675-4000 (rot.).<br> Correo Electrónico: argentinaencombo@gmail.com &copy;</p> 
+    </div>  
+</footer>
+
+</body>
+</html>

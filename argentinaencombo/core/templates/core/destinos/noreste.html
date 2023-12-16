@@ -1,0 +1,57 @@
+<!--navbar-->
+{% extends "core/base.html" %}
+{% block title %} noreste {% endblock %}
+
+{% block background %} {% endblock %}
+
+<!--contenido-->
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'core/css/BsAsDestino.css' %}" type="text/css">
+<div class="bellow_contenedor">
+       <img src="{% static 'core/img/img_destinos/destinos_noreste_2/NORESTE_encabezado.jpg' %}" alt="imagen del Noreste Argentino"/>
+        <div class="destino_X">NORESTE</div>
+    </div>
+
+    <div class="main_container">
+        <div>
+            <img class="image" src="{% static 'core/img/img_destinos/destinos_noreste_2/2_01_Gomones iguazu1.jpg' %}" alt="imagen de Buenos Aires"></a>
+        </div>
+        <div class="descripcion">
+            <h2 class="titulo_destino">PARQUE NACIONAL IGUAZÚ - MISIONES</h2>
+            <p class="texto_destino">¡Una experiencia inolvidable para toda la familia! Contacto estrecho con la naturaleza. <br> 
+                <b>Los recomendados:</b> el paseo en tren por la selva misionera, y paseos en lanchas frente a las cascadas.
+                <br>
+                <iframe width="220" height="65" src="https://www.youtube.com/embed/b83lxWz_se4?si=NYtH_j60JP83r7-a&amp;start=16" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </p>
+        </div>
+        
+        <div class="descripcion">
+            <h2 class="titulo_destino">PLAYAS DE CORRIENTES - CORRIENTES</h2>
+            <p class="texto_destino" >Las numerosas playas ubicadas a la vera del río Paraná, en verano, resultan una propuesta 
+                muy tentadora, sobre todo para los más pequeños de la familia. <br>
+                <b>Los recomendados:</b> paseos en gomones por el río.
+                <br>
+                <a href="https://corrientes.tur.ar/producto/sol-y-playa/">Página de turismo Corrientes</a>
+            </p>
+        </div>
+        <div>
+            <img class="image" src="{% static 'core/img/img_destinos/destinos_noreste_2/2_02_Playas-de-Corrientes.jpg' %}" alt="imagen de playas correntinas"></a>
+        </div>
+
+        <div>
+            <img class="image" src="{% static 'core/img/img_destinos/destinos_noreste_2/2_03_meteoro chaco.jpg' %}" alt="imagen de Campo de Cielo, Chaco"></a>
+        </div>
+        <div class="descripcion">
+            <h2 class="titulo_destino">CAMPO DE CIELO - CHACO</h2>
+            <p class="texto_destino">Lugar donde se albergan dos de los meteoritos encontrados más grandes del mundo.
+                Este paseo alimenta la curiosidad cientifica de nuestros pequeños, recorriendo un lugar donde
+                hace 20.000 años llovieron rocas espaciales.
+                <b>Los recomendados:</b> la sala subterránea donde se puede contemplar un sistema solar a escala, y el 
+                paseo por la reserva, donde hay más de 300 meteoritos en exposición, y se puede realizar avistaje de aves.
+                 <br>
+                <a href="https://turismo.chaco.gob.ar/destino/1">Página de turismo de Chaco</a>
+            </p>
+        </div>
+    </div>
+{% endblock %}

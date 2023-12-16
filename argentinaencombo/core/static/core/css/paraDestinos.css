@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family:'Roboto', Courier, monospace;
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Roboto', Courier, monospace;
+    color: rgb(250, 250, 250);
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* HEADER*/
+
+header {
+    background-color:rgb(52, 96, 240);
+    padding: 0.6rem;
+}
+.sticky{
+    position: fixed;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items:last baseline;
+}
+
+.navbar__logo {
+    max-width: 300px;
+}
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navbar__link {
+    font-size: 1.8em;
+    padding: 0.8rem 1.6rem;
+    display: inline-block;
+    transition: background .3s ease-in-out;
+    position: relative;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    -ms-transition: background .3s ease-in-out;
+    -o-transition: background .3s ease-in-out;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.navbar__link:hover {
+    background-color: rgba(150, 255, 51, 0.9);
+    color: rgb(52, 96, 240);
+}
+
+.with-icon {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.with-submenu:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    display: none;
+    width: 300px;
+    position: absolute;
+    background-color: rgb(52, 96, 240);
+    z-index: 3;
+}
+
+.submenu__link {
+    display: block;
+    padding: 0.8rem 1.6rem;
+    font-size: 1.8em;
+    transition: background .3s ease-in-out;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    -ms-transition: background .3s ease-in-out;
+    -o-transition: background .3s ease-in-out;
+}
+
+.submenu__link:hover {
+    background-color: rgba(150, 255, 51, 0.9);
+}
+
+/* DESTINOS BELOW*/
+
+.below {
+    background-image: url(../img/img_destinos/destinos_00/00-vacaciones-familia\ \(1\).jpg);
+    padding: 15rem;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    object-fit: cover;
+}
+
+.below__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: start;
+    z-index: 2;
+    position: relative;
+    align-items: flex-end;
+}
+
+.below__title {
+    font-family: 'Roboto', Courier, monospace;
+    font-size: 5rem;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 1px 2px 2px black, 0px 0px 25px blue, 0px 0px 5px blue;
+}
+
+.under_below__text {
+    font-family: 'Roboto', Courier, monospace;
+    color:white;
+    font-size: 2.5rem;
+    font-style: italic;
+    text-shadow: 1px 2px 2px black, 0px 0px 25px blue, 0px 0px 5px blue;
+    
+}
+
+.under_below {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap:1rem;
+    margin-top: 2.5rem;
+    margin-left: 2.5rem;
+}
+
+.galería_destinos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px,1fr)); 
+    margin: auto;
+    gap: 5px;
+    overflow: hidden;
+ }
+
+.image {
+    height: 500px;
+    max-width: 1fr;
+    object-fit: cover;
+    vertical-align: top;
+    transition: transforme 0.5s;
+    -webkit-transition: transforme 0.5s;
+    -moz-transition: transforme 0.5s;
+    -ms-transition: transforme 0.5s;
+    -o-transition: transforme 0.5s;
+}
+
+
+.galería_destinos > a {
+    display: block;
+    position:relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 lightskyblue, 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.galería_destinos a:hover img {
+    transform: rotate(10deg) scale(1);
+    -webkit-transform: rotate(10deg) scale(1.);
+    -moz-transform: rotate(10deg) scale(1.);
+    -ms-transform: rotate(10deg) scale(1.);
+    -o-transform: rotate(10deg) scale(1.);
+    
+}
+
+
+figure {
+    position: relative;
+}
+figure :hover figcaption {
+    display: block;
+}
+
+figcaption {
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    left: 5px;
+    right: 0px;
+    text-align:right ;
+    padding: 15px;
+    font-family: 'Roboto', Courier, monospace;
+    text-shadow: 1px 2px 2px black, 0px 0px 25px blue, 0px 0px 5px blue;
+    font-size: 3em;
+}
+
+/*Footer*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color:white;
+    border-radius: 25px;
+    font-family: 'Roboto', Courier, monospace;
+}
+
+.navbar {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.follow {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.follow__us {
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 2rem;
+}
+
+.follow__social_icons  {
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+.footer__copy {
+    margin-left: 80px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+.fab:hover {
+    transform: scale(1.7);
+}
+@keyframes colors {
+    0% {text-shadow: 2px 2px 4px rgb(52, 96, 240);}
+    25% {text-shadow: 2px 2px 4px rgb(52, 155, 240);}
+    50% {text-shadow: 2px 2px 4px rgb(52, 212, 240);}
+    100% {text-shadow: 2px 2px 4px rgba(75, 248, 6, 0.938);}
+}
+
+/*----------Responsive Tablet----------*/
+
+@media screen and (min-width: 640px) and (max-width: 1200px) {
+    
+    .navbar__logo {
+        max-width: 150px;
+    }
+
+    .navbar__link {
+        font-size: 1.5rem;
+        padding: 0.5em; 
+    }
+
+    .submenu__link {
+        font-size: 1.5rem;
+    }
+    .below {
+        padding: 10rem;  
+    }
+    .below__title {
+        font-size: 3rem;
+    }
+
+    .under_below__text {
+        font-size: 1.5rem; 
+    }
+
+    .under_below {
+        margin-top: 2rem;
+        margin-left: 2rem;
+    }
+    .galería_destinos {
+        grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); 
+        gap: 3px;
+     }
+
+     .image {
+        height: 300px;
+    }
+
+    figcaption {
+        font-size: 1.8em;
+    }
+
+    .follow__us {
+        font-size: 1.5rem;
+    }
+    
+    .follow__social_icons {
+        font-size: 15px;
+    }
+    
+    .footer__copy {
+        font-size: 0.5rem;
+    } 
+}
+
+/*----------Responsive Mobile----------*/
+
+@media screen and (max-width: 640px) {
+    .navbar__logo {
+        max-width: 100px;
+    }
+
+    .navbar__link {
+        font-size: 1rem;
+        padding: 0.5em; 
+    }
+
+    .submenu__link {
+        font-size: 1rem;
+    }
+
+    .below {
+        padding: 8rem;  
+    }
+    .below__title {
+        font-size: 2rem;
+    }
+
+    .under_below__text {
+        font-size: 1rem; 
+    }
+
+    .under_below {
+        margin-top: 1.5rem;
+        margin-left: 1.5rem;
+    }
+    .galería_destinos {
+        grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); 
+        gap: 1.5px;
+     }
+
+     .image {
+        height: 200px;
+    }
+
+    figcaption {
+        font-size: 1.3em;
+    }
+
+    .follow__us {
+        font-size: 1rem;
+    }
+    
+    .follow__social_icons {
+        font-size: 10px;
+    }
+    
+    .footer__copy {
+        font-size: 0.3rem;
+    }
+}

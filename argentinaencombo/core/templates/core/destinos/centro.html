@@ -1,0 +1,54 @@
+<!--navbar-->
+{% extends "core/base.html" %}
+{% block title %} centro {% endblock %}
+
+{% block background %} {% endblock %}
+
+<!--contenido-->
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'core/css/BsAsDestino.css' %}" type="text/css">
+<div class="bellow_contenedor">
+            <img src="{% static 'core/img/img_destinos/CENTRO.jpg' %}" alt="imagen de la región centro"/>
+        <div class="destino_X">CENTRO</div>
+        </div>
+
+    <div class="main_container">
+        <div>
+            <img class="image" src="{% static 'core/img/img_destinos/centro/Los_cocos.jpg' %}" alt="imagen de Los Cocos"></a>
+        </div>
+        <div class="descripcion">
+            <h2 class="titulo_destino">LOS COCOS</h2>
+            <p class="texto_destino">Los Cocos es una localidad de Punilla, provincia de Córdoba, y se encuentra a 84 km al norte de la ciudad de Córdoba y a 68.5 km de Villa Carlos Paz.
+                Es un lugar que ofrece distintos atractivos, entre los que se destacan el parque recreativo y cultural El Descanso, la aerosilla y el cerro El Camello, de 1800 m de altura, 
+                donde se encuentra El Mástil, un monolito de 31 metros de altura. 
+                También se puede disfrutar haciendo senderismo, paseos en bici o a caballo. <br>                
+                <a href="https://www.cordobaturismo.gov.ar/localidad/los-cocos/">Pagina de Turismo de Córdoba</a>
+            </p>
+        </div>
+        
+        <div class="descripcion">
+            <h2 class="titulo_destino">RESERVA PROVINCIAL PARQUE LURO</h2>
+            <p class="texto_destino">La reserva se puede visitar todo el año, siendo los meses de marzo y abril los que brindan el espectáculo de la brama de los ciervos colorados del lugar. Además, el parque protege uno de los bosques de caldén del país, árbol emblema de la región pampeana.
+                Cuenta con 5 senderos que permiten conocer los distintos ambientes y las especies que habitan en él y una casona convertida en el museo El Castillo.
+                La reserva tiene un camping, cabañas, restaurante, proveeduría y pileta. <br>                
+                <a href="https://turismo.lapampa.gob.ar/visitas-a-la-reserva-natural-parque-luro.html">Página de turismo de La Pampa</a>
+            </p>
+        </div>
+        <div>
+            <img class="image" src="{% static 'core/img/img_destinos/centro/Reserva_parque_luro.jpg' %}" alt="imagen de Parque Luro"></a>
+        </div>
+
+        <div>
+            <img class="image" src="{% static 'core/img/img_destinos/centro/Colon.jpg' %}" alt="imagen de la costanera"></a>
+        </div>
+        <div class="descripcion">
+            <h2 class="titulo_destino" >COLON</h2>
+            <p class="texto_destino">Colon se encuentra en la provincia de Entre Ríos y se puede acceder a la ciudad desde las rutas 14 y 26, y atravesando el puente General Artigas desde la República Oriental del Uruguay.
+                La ciudad cuenta con 10 km de playas que se extienden por río Uruguay y donde se pueden realizar distintas actividades acuáticas como navegación, kayak, remo, natación, esquí acuático, entre otros.
+                Al norte de la ciudad se encuentran las termas, donde se podrán encontrar 13 piscinas para disfrutar en familia y hasta un parque acuático para adolescentes y adultos. <br>                
+                <a href="https://www.entrerios.tur.ar/destino/193/Col%C3%B3n">Página de turismo de Entre Ríos</a>
+            </p>
+        </div>
+</div>
+{% endblock %}
